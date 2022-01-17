@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivanor Kieling">
+    <link rel="stylesheet" href="style.css">
+    <title>Dino Game</title>
+</head>
+<body>
+    <div id="placar"></div>
+    <div id="info_">
+        <p id="info">Pressione a tecla espaço ou seta para cima para pular e começar o jogo.</p>
+    </div>
+    
+    <div id="cenario">
+        <div class="content">
+            <div class="cloud"></div>
+            <div class="sun"></div>
+            <div class="cloud x"></div>
+            </div>
+        <div id="estrada">            
+        </div>
+        
+    </div>
+    <div id="dino">
+        <div id="cabeca">
+            <div id="cabelo"></div>
+            <div id="cabeca_container">
+                <div id="olho"></div>
+            </div>
+            <div id="boca"></div>
+            <div id="pescoco"></div>
+        </div>
+        <div id="corpo_em_pe">
+            <div class="row">
+                <div id="rabo1"></div>
+                <div>
+                    <div id="corpo1"></div>
+                    <div id="braco"></div>
+                </div>                
+            </div>            
+            <div class="row">
+                <div id="rabo2"></div>
+                <div id="corpo2"></div> 
+                <div id="mao"></div>          
+            </div>            
+            <div class="row">
+                <div id="rabo3"></div>
+                <div id="corpo3"></div>   
+            </div>            
+            <div id="corpo4"></div>   
+            <div id="corpo5"></div>   
+            <div id="corpo6"></div> 
+        </div>
+        <div id="pes_parados">
+            <div class="row">
+                <div id="coxa_direita" ></div>
+                <div id="coxa_esquerda" ></div>
+            </div>
+            <div class="row">
+                <div id="joelho_direito" ></div>
+                <div id="joelho_esquerdo" ></div>
+            </div>
+            <div class="row">
+                <div id="canela_direita" ></div>
+                <div id="canela_esquerda" ></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal com as informações de final de jogo -->
+    <div id="final" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 id="pontos"></h2>
+          </div>
+          <div class="modal-body">
+            <p>Clique no x ou fora desta caixa para começar nova partida.</p>
+          </div>
+        </div>
+      
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

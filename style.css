@@ -1,0 +1,338 @@
+:root {
+    --cor_dino: #456545;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    background-image: linear-gradient(rgb(114, 114, 226), rgb(3, 68, 3));
+}
+#info_{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#info{
+    color: white;
+    text-align: center;
+    width: 600px;
+    font-size: xx-large;
+    transition: 4s;
+    animation: inicio 10s alternate-reverse;
+}
+@keyframes inicio {
+    0%{margin-top:0px}
+    100%{margin-top:240px}
+}
+#placar{
+    position: absolute;
+    color: white;
+    margin: 20px 80px;
+    width: 300px;
+    height: 100px;
+    font-size: xx-large;
+}
+#estrada{
+    position: absolute;
+    overflow: hidden;
+    height: 200px;
+    border-top: 5px double rgb(99, 83, 60);
+    border-bottom: 5px double rgb(99, 83, 60);
+    background-image: linear-gradient( rgb(179, 167, 149),rgb(241, 231, 214), rgb(179, 167, 149));
+}
+.row{
+    display: flex;
+}
+#dino{
+    position: absolute;
+    height: 200px;
+    width: 185px;
+    margin-left: 150px; 
+}
+#cabelo{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 65px;
+    margin-left: 110px;                    /* */
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#cabeca_container{
+    background-color: var(--cor_dino);
+    height: 35px;
+    width: 80px;
+    margin-left: 105px;                    /* */
+    display: flex;
+    outline: 2px solid;
+}
+#olho{
+    background-color: #222;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#boca{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width:45px;
+    margin-left: 105px;                    /* */
+    border: 2px solid;
+}
+#pescoco{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 25px;
+    margin-left: 105px;                    /* */
+    margin-top: -3px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#rabo1{
+    background-color: var(--cor_dino);
+    height: 20px;
+    width: 8px;
+    border: 2px solid;
+}
+#corpo1{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 42px;
+    border: 2px solid;
+    margin-left: 76px;                    /* */
+}
+#braco{
+    background-color: var(--cor_dino);
+    height: 6px;
+    width: 75px;
+    border: 2px solid;
+    margin-left: 60px;                    /* */
+}
+#rabo2{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 20px;
+    border: 2px solid;
+}
+#corpo2{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 68px;
+    border: 2px solid;
+    margin-left: 38px;                    /* */
+}
+#mao{
+    background-color: var(--cor_dino);
+    height: 5px;
+    width: 5px;
+    border: 2px solid;
+    margin-left: 8px;                    /* */
+}
+#rabo3{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 30px;
+    border: 2px solid;
+}
+#corpo3{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 83px;
+    border: 2px solid;
+    margin-left: 13px;
+}
+#corpo4{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 130px;
+    border: 2px solid;
+}
+#corpo5{
+    background-color: var(--cor_dino);
+    height: 8px;
+    width: 110px;
+    border: 2px solid;
+    margin-left: 10px;
+}
+#corpo6{
+    background-color: var(--cor_dino);
+    height: 8px;
+    width: 90px;
+    border: 2px solid;
+    margin-left: 20px;
+}
+#coxa_direita{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 25px;
+    border: 2px solid;
+    margin-left: 35px;
+}
+#coxa_esquerda{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 15px;
+    border: 2px solid;
+    margin-left: 15px;
+}
+#joelho_direito{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 15px;
+    border: 2px solid;
+    margin-left: 35px;
+}
+#joelho_esquerdo{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 8px;
+    border: 2px solid;
+    margin-left: 32px;
+}
+#canela_direita{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 8px;
+    border: 2px solid;
+    margin-left: 35px;
+}
+#canela_esquerda{
+    background-color: var(--cor_dino);
+    height: 10px;
+    width: 8px;
+    border: 2px solid;
+    margin-left: 39px;
+}
+.content {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     padding:300px;
+   }
+   .sun {
+     display:inline-block;
+     border-radius:50%;
+     height:200px;
+     width:200px;
+     background:orange;
+     box-shadow: 0 0 10px orange,
+                   0 0 60px orange,
+                   0 0 200px yellow,
+                   inset 0 0 80px yellow;
+     z-index:12;
+     align:center;
+     z-index:-99;
+   }
+   
+   .cloud {
+     display:inline-block;
+     background:white;
+     width:120px;
+     height:120px; 
+     border-radius:50%;
+     position:relative;
+     top:-30px;
+     -webkit-filter: blur(6px);
+     z-index:11;
+     left:-50px;
+     animation: 60s cloudAnimation linear infinite;
+     opacity:0.76;
+   }
+   .cloud:before {
+     content:"";
+     display:inline-block;
+     background:white;
+     width:100px;
+     height:100px; 
+     -webkit-filter: blur(3px);
+     position:relative;
+     border-radius:50%;
+     top:-30px;
+     left:60px;
+   }
+   .cloud:after {
+     content:"";
+     display:inline-block;
+     background:white;
+     width:200px;
+     height:100px; 
+     -webkit-filter: blur(3px);
+     position:relative;
+     border-radius:50%;
+     top:-80px;
+     left:70px;
+   }
+   
+   .cloud:first-child {zoom:1.5;}
+   
+   @keyframes cloudAnimation {
+     0%{
+        transform: translate(1100px,0);
+     }
+     100% {
+       transform: translate(-1250px,0);
+     }
+   }
+
+   .modal {
+    display: none;
+    position: fixed; 
+    z-index: 20; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+   
